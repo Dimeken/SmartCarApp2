@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorGray"
+    android:id="@+id/drawer_layout"
+    tools:context=".MainActivity"
+    >
+
+<!--layout to contain contents of main body-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mainToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/back_blue"
+        android:textAlignment="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+
+        >
+
+        <ImageButton
+            android:id="@+id/btnMenu"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/menu"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/text_mainPage_mainPage"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            />
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_height"
+                android:background="@color/colorGray" />
+
+            <Button
+                android:id="@+id/btnMyAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background = "@drawable/back"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/text_mainPage_userAccount"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_height"
+                android:background="@color/colorGray" />
+
+
+            <LinearLayout
+                android:id="@+id/vgAutoHealth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background = "@drawable/back"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:id="@+id/btnAutoHealth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/text_mainPage_autoHealth" />
+
+                <LinearLayout
+                    android:id="@+id/linLay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linLayDiagnostics"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/btnDiagnostics"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="left"
+                        android:paddingTop="5dp"
+                        android:text="@string/text_mainPage_diagnostics"
+                        android:textColor="@color/colorBlack"
+                        android:textAllCaps="false" />
+
+                    <ImageButton
+                        android:id="@+id/btnDiagnostics2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/check_circle" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linLayMaintenance"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/btnMaintenance"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:paddingTop="5dp"
+                        android:text="@string/text_mainPage_maintenance"
+                        android:textColor="@color/colorBlack"
+                        android:background="@android:color/transparent"
+                        android:textAllCaps="false" />
+
+                    <ImageButton
+                        android:id="@+id/btnMaintenance2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/check_circle" />
+
+                </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/colorGray" />
+
+
+            <LinearLayout
+                android:id="@+id/vgRemoteControl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background = "@drawable/back"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <Button
+                    android:id="@+id/btnRemoteControl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/text_mainPage_remoteControl" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="15dp"
+                    >
+
+
+                    <Switch
+                        android:id="@+id/switchEngine"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="@string/text_mainPage_turnOnEngine" />
+
+                    <Switch
+                        android:id="@+id/switchDoors"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/text_mainPage_openDoors"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/colorGray" />
+
+            <LinearLayout
+                android:id="@+id/vgCarLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background = "@drawable/back"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <Button
+                    android:id="@+id/btnCarLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/text_mainPage_carLocation" />
+
+                <ImageButton
+                    android:id="@+id/imBtnMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/car_location"
+                    tools:ignore="ContentDescription"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/btnRefresh"
+                        android:layout_width="@dimen/width_btn"
+                        android:layout_height="@dimen/btn_height"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:src="@drawable/refresh"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/colorGray" />
+
+            <LinearLayout
+                android:id="@+id/vgSafetyScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background = "@drawable/back"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:id="@+id/linSafScore"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <Button
+                        android:id="@+id/btnSafetyScore"
+                        android:clickable="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="@string/text_mainPage_safetyScore" />
+
+                    <RelativeLayout
+                        android:clickable="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        >
+                        <Button
+                            android:id="@+id/btnSafetyScoreNumber"
+                            android:clickable="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorGreenOpen"
+                            android:text="95"
+                            android:textSize="@dimen/textSize_safety"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp">
+                        <RadioButton
+                            android:id="@+id/radio1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="@string/text_main_week"
+                            />
+                        <RadioButton
+                            android:id="@+id/radio2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/text_main_month"
+                            />
+                        <RadioButton
+                            android:id="@+id/radio3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/text_main_year"
+                            />
+
+                    </LinearLayout>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/colorGray" />
+
+            <LinearLayout
+                android:id="@+id/linLayDrivingHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background = "@drawable/back"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:clickable="true"
+                    android:id="@+id/linDrivingHistory"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <Button
+                    android:clickable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/text_mainPage_drivingHistory" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_stand"
+                    android:layout_marginRight="@dimen/margin_stand">
+
+                    <Button
+                        android:clickable="false"
+                        android:layout_width="@dimen/width_btn"
+                        android:layout_height="@dimen/btn_height"
+                        android:layout_alignParentLeft="true"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/list_padding_left"
+                        android:text="@string/text_mainPage_distance"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:clickable="false"
+                        android:id="@+id/btnDriveDistance"
+                        android:layout_width="@dimen/width_btn_right"
+                        android:layout_height="@dimen/btn_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_right_btn"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="100 км"
+                        android:textAllCaps="false" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_stand"
+                    android:layout_marginRight="@dimen/margin_stand">
+
+                    <Button
+                        android:clickable="false"
+                        android:layout_width="@dimen/width_btn"
+                        android:layout_height="@dimen/btn_height"
+                        android:layout_alignParentLeft="true"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/list_padding_left"
+                        android:text="@string/text_mainPage_fuelUsed"
+                        android:textAllCaps="false" />
+
+                    <Button
+                        android:clickable="false"
+                        android:id="@+id/btnDriveFuel"
+                        android:layout_width="@dimen/width_btn_right"
+                        android:layout_height="@dimen/btn_height"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/margin_right_btn"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="50 литров"
+                        android:textAllCaps="false" />
+
+                </RelativeLayout>
+                </LinearLayout>
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroupDrive"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="20dp">
+                        <RadioButton
+                            android:id="@+id/radioDrive1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="@string/text_main_week"
+                            />
+                        <RadioButton
+                            android:id="@+id/radioDrive2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/text_main_month"
+                            />
+                        <RadioButton
+                            android:id="@+id/radioDrive3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/text_main_year"
+                            />
+
+                    </LinearLayout>
+                </RadioGroup>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/colorGray" />
+
+            <LinearLayout
+                android:id="@+id/vgAlerts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background = "@drawable/back"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <Button
+                    android:id="@+id/btnAlerts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/text_mainPage_alerts" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <Switch
+                        android:id="@+id/switchSpeedAlert"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/text_mainPage_speedAlert" />
+
+                    <Switch
+                        android:id="@+id/switchBoundaryAlert"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@string/text_mainPage_boundaryAlert"
+
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/colorGray" />
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    </LinearLayout>
+
+    <!--Container for contents of drawer-->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        app:itemTextColor="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height = "match_parent"
+        android:layout_gravity="left"
+        android:fitsSystemWindows="true"
+        android:background="@color/colorBlueDark"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu"
+        >
+    </android.support.design.widget.NavigationView>
+
+    </android.support.v4.widget.DrawerLayout>
+

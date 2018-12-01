@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    android:fitsSystemWindows="true"
+    tools:context=".SafetyScoreActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mainToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/back_blue"
+            android:textAlignment="center">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/arrow_left"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/text_mainPage_safetyScore"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite" />
+        </android.support.v7.widget.Toolbar>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_height"
+                    android:background="@color/colorGray" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_stand"
+                        android:background="@color/colorGreenOpen">
+
+                        <Button
+                            android:id="@+id/btnSafetyScoreNumber"
+                            android:clickable="false"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/transparent"
+                            android:text="95"
+                            android:textSize="@dimen/textSize_safety"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_stand">
+
+                        <RadioGroup
+                            android:id="@+id/radioGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:paddingLeft="20dp">
+
+
+                                <RadioButton
+                                    android:id="@+id/radio1"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:checked="true"
+                                    android:text="@string/text_main_week"
+
+                                    />
+
+                                <RadioButton
+                                    android:id="@+id/radio2"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/text_main_month"
+
+
+                                    />
+
+                                <RadioButton
+                                    android:id="@+id/radio3"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="@string/text_main_year"
+
+
+                                    />
+
+                            </LinearLayout>
+                        </RadioGroup>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_height"
+                    android:background="@color/colorGray" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_stand"
+                        android:layout_marginTop="@dimen/margin_stand">
+
+                        <Button
+                            android:id="@+id/btnThisText"
+                            android:layout_width="@dimen/width_btn"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_alignParentLeft="true"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/list_padding_left"
+                            android:text="@string/text_drivingHistory_thisWeek"
+                            android:textAllCaps="false" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_stand"
+                        android:layout_marginRight="@dimen/margin_stand">
+
+                        <Button
+                            android:layout_width="@dimen/width_btn"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_alignParentLeft="true"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/list_padding_left"
+                            android:text="@string/text_safScoreAct_hardBraking"
+                            android:textAllCaps="false" />
+
+                        <Button
+                            android:id="@+id/measure1"
+                            android:layout_width="@dimen/width_btn_right"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/margin_right_btn"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textAllCaps="false" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_stand"
+                        android:layout_marginRight="@dimen/margin_stand">
+
+                        <Button
+                            android:layout_width="@dimen/width_btn"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_alignParentLeft="true"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/list_padding_left"
+                            android:text="@string/text_safScoreAct_highSpeed"
+                            android:textAllCaps="false" />
+
+                        <Button
+                            android:id="@+id/measure2"
+                            android:layout_width="@dimen/width_btn_right"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/margin_right_btn"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textAllCaps="false" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_stand"
+                        android:layout_marginRight="@dimen/margin_stand">
+
+                        <Button
+                            android:layout_width="@dimen/width_btn"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_alignParentLeft="true"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/list_padding_left"
+                            android:text="@string/text_safScoreAct_phoneUsage"
+                            android:textAllCaps="false" />
+
+                        <Button
+                            android:id="@+id/measure3"
+                            android:layout_width="@dimen/width_btn_right"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/margin_right_btn"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textAllCaps="false" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_stand"
+                        android:layout_marginRight="@dimen/margin_stand">
+
+                        <Button
+                            android:layout_width="@dimen/width_btn"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_alignParentLeft="true"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/list_padding_left"
+                            android:text="@string/text_safScoreAct_rapidAccel"
+                            android:textAllCaps="false" />
+
+                        <Button
+                            android:id="@+id/measure4"
+                            android:layout_width="@dimen/width_btn_right"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/margin_right_btn"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textAllCaps="false" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_stand"
+                        android:layout_marginRight="@dimen/margin_stand"
+                        android:layout_marginBottom="@dimen/margin_stand">
+
+                        <Button
+                            android:layout_width="@dimen/width_btn"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_alignParentLeft="true"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/list_padding_left"
+                            android:text="@string/text_safScoreAct_sharpCorner"
+                            android:textAllCaps="false" />
+
+                        <Button
+                            android:id="@+id/measure5"
+                            android:layout_width="@dimen/width_btn_right"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/margin_right_btn"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textAllCaps="false" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:background="@color/colorGray" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_stand"
+                        >
+
+                        <Button
+                            android:layout_width="@dimen/width_btn"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_alignParentLeft="true"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/list_padding_left"
+                            android:text="@string/text_main_statusKey"
+                            android:textAllCaps="false" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_stand"
+                        android:layout_marginLeft="@dimen/margin_stand"
+                        android:layout_marginRight="@dimen/margin_stand"
+                        >
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_alignParentLeft="true"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/list_padding_left"
+                            android:text="90 - 100"
+                            android:textAllCaps="false" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_stand"
+                        android:layout_marginLeft="@dimen/margin_stand"
+                        android:layout_marginRight="@dimen/margin_stand"                        >
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_alignParentLeft="true"
+                            android:background="@color/colorGreenOpen"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/list_padding_left"
+                            android:text="@string/text_safScoreAct_status1"
+                            android:textAllCaps="false" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_stand"
+                        android:layout_marginLeft="@dimen/margin_stand"
+                        android:layout_marginRight="@dimen/margin_stand"
+                        >
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_alignParentLeft="true"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/list_padding_left"
+                            android:text="80 - 90"
+                            android:textAllCaps="false" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_stand"
+                        android:layout_marginLeft="@dimen/margin_stand"
+                        android:layout_marginRight="@dimen/margin_stand"                        >
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_alignParentLeft="true"
+                            android:background="@color/colorYellow"
+                            android:text="@string/text_safScoreAct_status2"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/list_padding_left"
+                            android:textAllCaps="false" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_stand"
+                        android:layout_marginLeft="@dimen/margin_stand"
+                        android:layout_marginRight="@dimen/margin_stand"
+                        >
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_alignParentLeft="true"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/list_padding_left"
+                            android:text="@string/text_safScoreAct_below80"
+                            android:textAllCaps="false" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_stand"
+                        android:layout_marginLeft="@dimen/margin_stand"
+                        android:layout_marginRight="@dimen/margin_stand"                        >
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_alignParentLeft="true"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/list_padding_left"
+                            android:background="@color/colorRed"
+                            android:text="@string/text_safScoreAct_status3"
+                            android:textAllCaps="false" />
+
+                    </RelativeLayout>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@color/colorBlueDark"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:itemTextColor="@color/colorWhite"
+        app:menu="@menu/drawer_menu">
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <Button
+        android:id="@+id/btnOil"
+        android:layout_alignParentLeft="true"
+        android:layout_width="@dimen/width_btn"
+        android:layout_height="@dimen/btn_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/list_padding_left"
+        android:text="text"
+        android:background="@android:color/transparent"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_width="@dimen/width_btn_right"
+        android:layout_height="@dimen/btn_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_right_btn"
+        android:gravity="center_vertical"
+        android:text="20 Sept 2018"
+        android:background="@android:color/transparent"
+        android:textAllCaps="false"
+        />
+
+</RelativeLayout>

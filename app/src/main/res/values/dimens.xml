@@ -1,0 +1,36 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="btn_height">40dp</dimen>
+    <dimen name="btn_height_smaller">20dp</dimen>
+    <dimen name="margin_stand">12dp</dimen>
+    <dimen name="btn_checked">70dp</dimen>
+    <dimen name="view_height">15dp</dimen>
+    <dimen name="list_padding_left">30dp</dimen>
+    <dimen name="listView_padding_left">15dp</dimen>
+    <dimen name="padding_left_btn_small">0dp</dimen>
+    <dimen name="width_btn">160dp</dimen>
+    <dimen name="width_btn_larger">240dp</dimen>
+    <dimen name="width_btn_larger2">180dp</dimen>
+    <dimen name="width_btn_right">100dp</dimen>
+    <dimen name="width_btn_small">45dp</dimen>
+    <dimen name="width_btn_smallest">15dp</dimen>
+    <dimen name="margin_right_btn_small">30dp</dimen>
+    <dimen name="margin_right_btn_smallest">15dp</dimen>
+    <dimen name="margin_right_btn">0dp</dimen>
+    <dimen name="margin_left_tocenter">115dp</dimen>
+    <dimen name="width_edit">80dp</dimen>
+    <dimen name="margin_right_edit">10dp</dimen>
+    <dimen name="textSize_edit">14sp</dimen>
+    <dimen name="textSize_safety">50sp</dimen>
+    <dimen name="padding_left_btn"></dimen>
+    <dimen name="margin_left_statuskey">13dp</dimen>
+    <dimen name="dimen_safscore">60dp</dimen>
+    <dimen name="dimen_graph_driving_history">250dp</dimen>
+
+
+</resources>

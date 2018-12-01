@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_stand"
+    >
+
+    <EditText
+        android:id="@+id/editOil"
+        android:hint="@string/text_dialogNewNote_enterOil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/editDate"
+        android:hint="@string/text_dialogNewNote_enterDate"
+        android:layout_below="@id/editOil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:text="@string/text_main_ok"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/editDate"
+        android:layout_width="@dimen/width_btn"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnCancel"
+        android:text="@string/text_main_cancel"
+        android:layout_below="@id/editDate"
+        android:layout_width="@dimen/width_btn"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

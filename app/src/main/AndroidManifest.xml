@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    package="com.example.omen.smartcarapp1">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <!-- android:theme="@style/AppTheme" -->
+
+        <activity
+            android:name=".MainActivity"
+            android:label="Smart car">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="Menu" />
+        <activity
+            android:name=".AutoHealthActivity"
+            android:label="Auto Health" />
+        <activity
+            android:name=".RemoteControlActivity"
+            android:label="Remote Control" />
+        <activity
+            android:name=".CarLocationActivity"
+            android:label="Car Location" />
+        <activity
+            android:name=".SafetyScoreActivity"
+            android:label="Safety Score" />
+        <activity
+            android:name=".DrivingHistoryActivity"
+            android:label="Driving History" />
+        <activity
+            android:name=".BatteryActivity"
+            android:label="Battery" />
+        <activity
+            android:name=".CoolantActivity"
+            android:label="Coolant" />
+        <activity
+            android:name=".MechanicalActivity"
+            android:label="Mechanical" />
+        <activity
+            android:name=".ElectricalActivity"
+            android:label="Electrical" />
+        <activity
+            android:name=".AlertsActivity"
+            android:label="Alerts" />
+        <activity
+            android:name=".MyAccountActivity"
+            android:label="My account" />
+        <activity
+            android:name=".HelpAndSupportActivity"
+            android:label="Help and support" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="About us" />
+        <activity
+            android:name=".MaintenanceActivity"
+            android:label="Maintenance" />
+        <activity
+            android:name=".OilChangeActivity"
+            android:label="Oil change" />
+        <activity
+            android:name=".TireRotationActivity"
+            android:label="Tire rotation" />
+        <activity
+            android:name=".AlternatorActivity"
+            android:label="Alternator" />
+        <activity
+            android:name=".DiagnosticsActivity"
+            android:label="Diagnostics" />
+        <activity android:name=".SamplePageActivity2" />
+        <activity android:name=".DeveloperActivity" />
+        <activity android:name=".ChernovikActivity" />
+        <activity android:name=".DialogNewNoteActivity" />
+        <activity android:name=".BluetoothActivity"></activity>
+    </application>
+
+</manifest>

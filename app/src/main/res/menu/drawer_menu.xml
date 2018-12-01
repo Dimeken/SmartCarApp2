@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<!--
+    <group android:checkableBehavior="single">
+-->
+    <group >
+        <item
+            android:id="@+id/nav_main_page"
+            android:icon="@drawable/page_next_outline"
+            android:title="@string/text_mainPage_mainPage"
+            />
+        <item
+            android:id="@+id/nav_bluetooth"
+            android:icon="@drawable/bluetooth"
+            android:title="@string/text_main_bluetooth"
+            />
+        <item
+            android:id="@+id/nav_auto_health"
+            android:icon="@drawable/heart"
+            android:title="@string/text_mainPage_autoHealth"
+            />
+        <item
+            android:id="@+id/nav_remote_control"
+            android:icon="@drawable/remote"
+            android:title="@string/text_mainPage_remoteControl"
+            android:textColor="@color/colorWhite"
+            />
+        <item
+            android:id="@+id/nav_car_location"
+            android:icon="@drawable/map_marker"
+            android:title="@string/text_mainPage_carLocation"
+            android:textColor="@color/colorWhite"
+            />
+        <item
+            android:id="@+id/nav_safety_score"
+            android:icon="@drawable/numeric"
+            android:title="@string/text_mainPage_safetyScore"
+            android:textColor="@color/colorWhite"
+            />
+        <item
+            android:id="@+id/nav_driving_history"
+            android:icon="@drawable/car_side"
+            android:title="@string/text_mainPage_drivingHistory"
+            android:textColor="@color/colorWhite"
+            />
+        <item
+            android:id="@+id/nav_alerts"
+            android:icon="@drawable/alarm_light"
+            android:title="@string/text_mainPage_alerts"
+            android:textColor="@color/colorWhite"
+            />
+        <item
+            android:id="@+id/nav_dev"
+            android:title="@string/text_main_developerPage"
+            android:textColor="@color/colorWhite"
+            />
+
+
+
+
+    </group>
+    <group android:id="@+id/ashala_mashala">
+    <item
+        android:id="@+id/nav_my_account"
+        android:icon="@drawable/clipboard_account"
+        android:title="@string/text_main_myAccount"
+        android:textColor="@color/colorWhite"
+        />
+    <item
+        android:id="@+id/nav_help_support"
+        android:icon="@drawable/help_circle"
+        android:title="@string/text_main_helpAndSupport"
+        android:textColor="@color/colorWhite"
+        />
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/information"
+        android:title="@string/text_main_about"
+        android:textColor="@color/colorWhite"
+        />
+    <item
+        android:id="@+id/nav_signout"
+        android:icon="@drawable/exit_run"
+        android:title="@string/text_main_signOut"
+        android:textColor="@color/colorWhite"
+        />
+    </group>
+</menu>

@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">SmartCarApp1</string>
+    <string name="acc_name">User Azamat, Toyota Camry 50</string>
+    <string name="title_activity_sample">SampleActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="text_mainPage_mainPage">Главная страница</string>
+    <string name="text_mainPage_userAccount">Азамат, Toyota Camry 50</string>
+    <string name="text_mainPage_autoHealth">Состояние авто</string>
+    <string name="text_mainPage_diagnostics">Диагностика</string>
+    <string name="text_mainPage_maintenance">Обслуживание</string>
+    <string name="text_mainPage_remoteControl">Удаленное управление</string>
+    <string name="text_mainPage_turnOnEngine">Завести двигатель</string>
+    <string name="text_mainPage_openDoors">Открыть двери</string>
+    <string name="text_mainPage_carLocation">Карта</string>
+    <string name="text_mainPage_safetyScore">Баллы вождения</string>
+    <string name="text_mainPage_drivingHistory">История поездок</string>
+    <string name="text_mainPage_distance">Путь</string>
+    <string name="text_mainPage_fuelUsed">Топливо</string>
+    <string name="text_mainPage_alerts">Оповещания</string>
+    <string name="text_mainPage_speedAlert">Превышение скорости</string>
+    <string name="text_mainPage_boundaryAlert">Выход из зоны</string>
+
+    <string name="text_main_bluetooth">Соединение</string>
+    <string name="text_main_bluetoothItself">Bluetooth</string>
+    <string name="text_main_developerPage">Для разработчика</string>
+    <string name="text_main_myAccount">Мой аккаунт</string>
+    <string name="text_main_helpAndSupport">Помощь</string>
+    <string name="text_main_about">О нас</string>
+    <string name="text_main_signOut">Выйти</string>
+    <string name="text_main_noIssueFound">Ошибок не найдено</string>
+    <string name="text_main_statusKey">Статус</string>
+    <string name="text_main_status">Статус:</string>
+    <string name="text_main_search">Поиск</string>
+    <string name="text_main_ledOff">Выключить лампочку</string>
+    <string name="text_main_ok">Ок</string>
+    <string name="text_main_cancel">Отмена</string>
+    <string name="text_main_error">Ошибка</string>
+    <string name="text_main_week">Неделя</string>
+    <string name="text_main_month">Месяц</string>
+    <string name="text_main_year">Год</string>
+    <string name="text_main_issueFound">Найдена ошибка: осмотритесь у мастера.</string>
+    <string name="text_main_name">Имя</string>
+    <string name="text_main_carModel">Автомобиль</string>
+    <string name="text_main_reminder">Напоминание</string>
+    <string name="text_main_reminderDate">Дата напоминания</string>
+    <string name="text_main_nameAzamat">Азамат</string>
+    <string name="text_main_carToyota">Toyota Camry 50</string>
+    <string name="text_main_today">Сегодня</string>
+    <string name="text_main_yesterday">Вчера</string>
+
+    <string name="text_aboutAct_ourSite">Наш сайт: detailgroup.kz</string>
+    <string name="text_aboutAct_version">Версия: 1.0</string>
+
+    <string name="text_alertsAct_setMaxSpeed">Установить максимальную скорость (км/ч)</string>
+    <string name="hint_alertsAct_setMaxSpeed">100</string>
+    <string name="text_alertsAct_setMaxDistance">Установить максимальную дистанцию от вас (км)</string>
+    <string name="hint_alertsAct_setMaxDistance">50</string>
+    <string name="text_alertsAct_andOr">или</string>
+    <string name="text_alertsAct_drawBoundary">Начертите границу на карте</string>
+
+    <string name="text_alternatorAct_alternator">Генератор</string>
+    <string name="text_alternatorAct_status1">Больше чем 11,8В или меньше чем 15,0В. Все в порядке.</string>
+    <string name="text_alternatorAct_status2">Меньше чем 11,8В или больше чем 15,0В. Осмотритесь у механика как можно скорее.</string>
+
+    <string name="text_batteryAct_battery">Аккумулятор</string>
+    <string name="text_batteryAct_status1">Больше чем 12,0В. Все в порядке.</string>
+    <string name="text_batteryAct_status2">Меньше чем 12,0 В. Срочно зарядите аккумулятор.</string>
+
+    <string name="text_coolantAct_coolant">Охлаждающая жидкость</string>
+    <string name="text_coolantAct_status1">Меньше чем 110С. Все в порядке.</string>
+    <string name="text_coolantAct_status2">Больше чем 110С. Скорее остановите машину и замените жидкость.</string>
+
+    <string name="text_mechanicalAct_mechanical">Механика автомобиля</string>
+
+    <string name="text_electricalAct_electrical">Электрика автомобиля</string>
+
+    <string name="text_dialogNewNote_enterOil">Имя масла</string>
+    <string name="text_dialogNewNote_enterDate">Дата</string>
+
+    <string name="text_drivingHistory_thisWeek">Эта неделя</string>
+    <string name="text_drivingHistory_thisMonth">Этот месяц</string>
+    <string name="text_drivingHistory_thisYear">Этот год</string>
+    <string name="text_drivingHistory_sharpTurn">Резкий поворот</string>
+
+    <string name="text_helpAndSupportAct_howToUse">Как использовать приложение</string>
+    <string name="text_helpAndSupportAct_reportProblem">Сообщите об ошибке</string>
+
+    <string name="text_maintenanceAct_oilChange">Замена масла</string>
+    <string name="text_maintenanceAct_tireChange">Замена шин</string>
+
+    <string name="text_myAccountAct_findAutomatically">Найти автоматически</string>
+
+    <string name="text_oilChangeAct_oilStatus">Состояние масла</string>
+    <string name="text_oilChangeAct_notesHistory">История замены масла</string>
+
+    <string name="text_safScoreAct_hardBraking">Резкое торможение</string>
+    <string name="text_safScoreAct_highSpeed">Повышение скорости</string>
+    <string name="text_safScoreAct_phoneUsage">Использование телефона</string>
+    <string name="text_safScoreAct_rapidAccel">Резкое ускорение</string>
+    <string name="text_safScoreAct_sharpCorner">Резкий поворот</string>
+    <string name="text_safScoreAct_status1">Отлично, так держать. Вы кандидат на скидку в страховой компании!</string>
+    <string name="text_safScoreAct_status2">Хорошо, продолжайте в том же духе. Старайтесь избегать резких ускорений.</string>
+    <string name="text_safScoreAct_status3">Плохо, вам следует следить за темпом вашей езды.</string>
+    <string name="text_safScoreAct_below80">меньше 80</string>
+
+    <string name="text_tireRotation_tire">Состояние шин</string>
+
+    <string name="text_diagnosticsAct_doDiagnostics">Сделать диагностику</string>
+    <string name="text_diagnosticsAct_lastTime">Последний раз:</string>
+
+
+
+
+</resources>

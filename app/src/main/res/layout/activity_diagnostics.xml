@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    android:fitsSystemWindows="true"
+    tools:context=".DiagnosticsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/mainToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/back_blue"
+            android:textAlignment="center">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/arrow_left"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/text_mainPage_diagnostics"
+                android:textColor="@color/colorWhite" />
+        </android.support.v7.widget.Toolbar>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_height"
+                    android:background="@color/colorGray" />
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background = "@drawable/back"
+                    android:orientation="vertical"
+                    >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <RelativeLayout
+                        android:layout_margin="@dimen/margin_stand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <Button
+                            android:id="@+id/btnDoDiagnostics"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/btn_height"
+                            android:background="@drawable/back"
+                            android:gravity="center"
+                            android:text="@string/text_diagnosticsAct_doDiagnostics"
+                            android:textAllCaps="false"
+                            />
+
+
+
+                    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_height"
+                    android:background="@color/colorGray" />
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/vgAutoHealth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back"
+                    android:orientation="vertical"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/relBattery"
+                        android:layout_margin="@dimen/margin_stand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <Button
+                            android:clickable="false"
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="@dimen/width_btn"
+                            android:layout_height="@dimen/btn_height"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/list_padding_left"
+                            android:text="@string/text_batteryAct_battery"
+                            android:textAllCaps="false"
+                            />
+
+                        <ImageButton
+                            android:clickable="false"
+                            android:layout_width="@dimen/width_btn_small"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_toLeftOf="@+id/btn1"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:src="@drawable/check_circle"
+                            />
+
+                        <ImageButton
+                            android:clickable="false"
+                            android:id="@+id/btn1"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/margin_right_btn_smallest"
+                            android:layout_width="@dimen/width_btn_smallest"
+                            android:layout_height="@dimen/btn_height"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:src="@drawable/arrow_right"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relCoolant"
+                        android:layout_margin="@dimen/margin_stand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <Button
+                            android:clickable="false"
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="@dimen/width_btn"
+                            android:layout_height="@dimen/btn_height"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/list_padding_left"
+                            android:text="@string/text_coolantAct_coolant"
+                            android:textAllCaps="false"
+                            />
+
+                        <ImageButton
+                            android:clickable="false"
+                            android:layout_width="@dimen/width_btn_small"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_toLeftOf="@+id/btn2"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:src="@drawable/check_circle"
+                            />
+
+                        <ImageButton
+                            android:clickable="false"
+                            android:id="@+id/btn2"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/margin_right_btn_smallest"
+                            android:layout_width="@dimen/width_btn_smallest"
+                            android:layout_height="@dimen/btn_height"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:src="@drawable/arrow_right"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relMechanical"
+                        android:layout_margin="@dimen/margin_stand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <Button
+                            android:clickable="false"
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="@dimen/width_btn"
+                            android:layout_height="@dimen/btn_height"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/list_padding_left"
+                            android:text="@string/text_mechanicalAct_mechanical"
+                            android:textAllCaps="false"
+                            />
+
+                        <ImageButton
+                            android:clickable="false"
+                            android:layout_width="@dimen/width_btn_small"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_toLeftOf="@+id/btn3"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:src="@drawable/check_circle"
+                            />
+
+                        <ImageButton
+                            android:clickable="false"
+                            android:id="@+id/btn3"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/margin_right_btn_smallest"
+                            android:layout_width="@dimen/width_btn_smallest"
+                            android:layout_height="@dimen/btn_height"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:src="@drawable/arrow_right"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relElectrical"
+                        android:layout_margin="@dimen/margin_stand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <Button
+                            android:clickable="false"
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="@dimen/width_btn"
+                            android:layout_height="@dimen/btn_height"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/list_padding_left"
+                            android:text="@string/text_electricalAct_electrical"
+                            android:textAllCaps="false"
+                            />
+
+                        <ImageButton
+                            android:clickable="false"
+                            android:layout_width="@dimen/width_btn_small"
+                            android:layout_height="@dimen/btn_height"
+                            android:layout_toLeftOf="@+id/btn4"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:src="@drawable/check_circle"
+                            />
+
+                        <ImageButton
+                            android:clickable="false"
+                            android:id="@+id/btn4"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/margin_right_btn_smallest"
+                            android:layout_width="@dimen/width_btn_smallest"
+                            android:layout_height="@dimen/btn_height"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:src="@drawable/arrow_right"
+                            />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_height"
+                    android:background="@color/colorGray" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background = "@drawable/back"
+                    android:orientation="vertical"
+                    >
+
+
+                    <RelativeLayout
+                        android:layout_margin="@dimen/margin_stand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <Button
+                            android:id="@+id/btnLastTime"
+                            android:layout_alignParentLeft="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/btn_height"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/list_padding_left"
+                            android:text="@string/text_diagnosticsAct_lastTime"
+                            android:textAllCaps="false"
+                            />
+
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@color/colorBlueDark"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header"
+        app:itemTextColor="@color/colorWhite"
+        app:menu="@menu/drawer_menu">
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>
